@@ -1,4 +1,5 @@
-# mycard
+# The my_card App
+The my_card app made as a portfolio app. It contains the main page which conatins the picture, contact details and 
 
 A new Flutter application.
 
