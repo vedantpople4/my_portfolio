@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+
         backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
@@ -97,6 +98,27 @@ class MyApp extends StatelessWidget {
               )
             ],
           ),
+        ),
+        drawer : Drawer(
+            child: ListView(
+              children: <Widget>[
+                DrawerHeader(
+                  child: Text('My Skills'),
+                  decoration: BoxDecoration(
+
+                    color: Colors.yellowAccent,
+                    shape: BoxShape.rectangle,
+                  ),
+                ),
+                ListTile(
+                  title: Text('Data Science'),
+                ),
+                ListTile(
+                  title: Text('Machine Learning'),
+                ),
+              ],
+            )
+
         ),
       ),
     );
