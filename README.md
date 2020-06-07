@@ -1,4 +1,5 @@
-# mycard
+# The my_card App
+The my_card app made as a portfolio app. It contains the main page which conatins the picture, contact details and email address. In future the app will have a drawer widget and that will have many sections related to vrious aspects of my life.
 
 A new Flutter application.
 
