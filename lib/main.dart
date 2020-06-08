@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'datascience.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,8 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'My Portfolio App',
+      initialRoute: '/',
+      routes: {
+        '/data science' : (BuildContext context) => DataScience(),
+      },
       home: Scaffold(
-
         backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
@@ -103,24 +108,32 @@ class MyApp extends StatelessWidget {
             child: ListView(
               children: <Widget>[
                 DrawerHeader(
-                  child: Text('My Skills'),
+                  child: Text(''),
                   decoration: BoxDecoration(
-
                     color: Colors.yellowAccent,
                     shape: BoxShape.rectangle,
+                    image: DecorationImage(
+                        image: NetworkImage(
+                      'https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336378_1280.jpg'
+                      ),
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 ListTile(
                   title: Text('Data Science'),
+                  onTap: (){
+                    Navigator.pushReplacement(context, new MaterialPageRoute(builder: (context)=>DataScience()));
+                  },
                 ),
                 ListTile(
                   title: Text('Machine Learning'),
                 ),
               ],
             )
-
         ),
       ),
+
     );
   }
 }
