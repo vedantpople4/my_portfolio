@@ -109,12 +109,32 @@ class HomePage extends StatelessWidget{
                 ),
               ),
               FlatButton(
-                child: Text('Data Science'),
+                child: Text('Machine Learning'),
                 color: Colors.yellowAccent,
                 onPressed: (){
                   Route route = MaterialPageRoute(builder: (context) =>DataScience());
                   Navigator.push(context, route);
                   },
+              ),
+              Card (
+                color: Colors.black,
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      FlatButton(
+                        child: Text('ISA'),
+                        color: Colors.yellowAccent,
+                        onPressed: (){},
+                      ),
+                      FlatButton(
+                        child: Text('Github'),
+                        color: Colors.yellowAccent,
+                        onPressed: (){},
+                      )
+
+              ]
+
+              )
               )
             ],
           ),
