@@ -11,12 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Portfolio App',
-      initialRoute: '/',
-      routes: <String, WidgetBuilder>{
-        '/data science' : (BuildContext context) => DataScience()
-      },
-      home: Scaffold(
+        title: 'My Portfolio App',
+        initialRoute: '/',
+        routes: <String, WidgetBuilder>{
+          '/Data Science': (BuildContext context) => DataScience()
+        });
+  }
+}
+
+class HomePage extends StatelessWidget{
+  @override
+  Widget build (BuildContext context){
+    return new Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
@@ -139,9 +145,7 @@ class MyApp extends StatelessWidget {
               ],
             )
         ),
-      ),
-
-    );
+      );
   }
 }
 
