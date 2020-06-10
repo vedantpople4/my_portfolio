@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'My Portfolio App',
+        home: new HomePage(),
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
           '/Data Science': (BuildContext context) => DataScience()
