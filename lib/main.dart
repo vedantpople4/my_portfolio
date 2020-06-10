@@ -122,7 +122,7 @@ class HomePage extends StatelessWidget{
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       FlatButton(
-                        child: Text('ISA'),
+                        child: Text('LinkedIn'),
                         color: Colors.yellowAccent,
                         onPressed: (){},
                       ),
