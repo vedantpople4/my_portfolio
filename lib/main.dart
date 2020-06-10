@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Portfolio App',
       initialRoute: '/',
-      routes: <String, WidgetBuilder>{
+      routes: {
         '/data science' : (BuildContext context) => DataScience()
       },
       home: Scaffold(
