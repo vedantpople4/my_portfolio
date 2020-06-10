@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'datascience.dart';
+import 'package:mycard/datascience.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Portfolio App',
       initialRoute: '/',
-      routes: {
+      routes: <String, WidgetBuilder>{
         '/data science' : (BuildContext context) => DataScience()
       },
       home: Scaffold(
@@ -100,6 +100,14 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+              FlatButton(
+                child: Text('Data Science'),
+                color: Colors.yellowAccent,
+                onPressed: (){
+                  Route route = MaterialPageRoute(builder: (context) =>DataScience());
+                  Navigator.push(context, route);
+                  },
               )
             ],
           ),
@@ -123,12 +131,11 @@ class MyApp extends StatelessWidget {
                 ListTile(
                   title: Text('Data Science'),
                   onTap: (){
-                    Navigator.pushReplacement(context, new MaterialPageRoute(builder: (context)=>DataScience()));
+                    Route route = MaterialPageRoute(builder: (context) =>DataScience());
+                    Navigator.push(context, route);
                   },
                 ),
-                ListTile(
-                  title: Text('Machine Learning'),
-                ),
+
               ],
             )
         ),
