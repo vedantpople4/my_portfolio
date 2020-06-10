@@ -131,41 +131,35 @@ class HomePage extends StatelessWidget{
                         color: Colors.yellowAccent,
                         onPressed: (){},
                       )
-
-              ]
-
-              )
+                    ]
+                )
               )
             ],
           ),
         ),
-        drawer : Drawer(
-            child: ListView(
-              children: <Widget>[
-                DrawerHeader(
-                  child: Text(''),
-                  decoration: BoxDecoration(
-                    color: Colors.yellowAccent,
-                    shape: BoxShape.rectangle,
-                    image: DecorationImage(
-                        image: NetworkImage(
-                      'https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336378_1280.jpg'
-                      ),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-                ListTile(
-                  title: Text('Data Science'),
-                  onTap: (){
-                    Route route = MaterialPageRoute(builder: (context) =>DataScience());
-                    Navigator.push(context, route);
-                  },
-                ),
+      bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.black54,
+        backgroundColor: Colors.yellowAccent,
+        items: const <BottomNavigationBarItem>[
 
-              ],
-            )
-        ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title: Text('Home'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_circle),
+            title : Text('Add'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.code),
+            title: Text('Code'),
+          ),
+
+
+        ],
+
+      ) ,
+
       );
   }
 }
