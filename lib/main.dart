@@ -138,21 +138,21 @@ class HomePage extends StatelessWidget{
           ),
         ),
       bottomNavigationBar: BottomNavigationBar(
-        fixedColor: Colors.yellow,
+        fixedColor: Colors.black,
         backgroundColor: Colors.black,
         items: const <BottomNavigationBarItem>[
 
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home, color: Colors.yellowAccent),
             title: Text('Home'),
-            backgroundColor: Colors.black,
+
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle),
+            icon: Icon(Icons.add_circle, color: Colors.yellowAccent,),
             title : Text('Add'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.code),
+            icon: Icon(Icons.code, color: Colors.yellowAccent),
             title: Text('Code'),
           ),
 
