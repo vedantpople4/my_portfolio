@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget{
   @override
   Widget build (BuildContext context){
     return new Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget{
                   'Vedant Pople',
                 style: TextStyle(
                   fontSize: 40.0,
-                  color: Colors.yellowAccent,
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
                   fontFamily: 'Pacifico',
@@ -117,7 +117,8 @@ class HomePage extends StatelessWidget{
                   },
               ),
               Card (
-                color: Colors.black,
+                elevation: 0,
+                color: Colors.white,
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
@@ -138,16 +139,13 @@ class HomePage extends StatelessWidget{
           ),
         ),
       bottomNavigationBar: BottomNavigationBar(
-        fixedColor: Colors.black,
-        backgroundColor: Colors.black,
+
         items: const <BottomNavigationBarItem>[
 
           BottomNavigationBarItem(
             icon: Icon(Icons.home, color: Colors.yellowAccent),
             title: Text('Home'),
-
           ),
-
           BottomNavigationBarItem(
             icon: Icon(Icons.add_circle, color: Colors.yellowAccent,),
             title : Text('Add'),
@@ -156,6 +154,14 @@ class HomePage extends StatelessWidget{
             icon: Icon(Icons.code, color: Colors.yellowAccent),
             title: Text('Code'),
           ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.computer, color: Colors.yellowAccent),
+            title: Text('Computer'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.call_split,color: Colors.yellowAccent),
+            title: Text('Github'),
+          )
 
 
         ],
