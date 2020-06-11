@@ -147,6 +147,7 @@ class HomePage extends StatelessWidget{
             title: Text('Home'),
 
           ),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.add_circle, color: Colors.yellowAccent,),
             title : Text('Add'),
