@@ -63,64 +63,10 @@ class HomePage extends StatelessWidget{
                   fontFamily: 'SansSourcePro',
                 ),
               ),
-              Card(
-                color: Colors.yellow,
-                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 85.0),
-                child: Padding(
-                  padding: EdgeInsets.all(5.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
-                        size: 20.0,
-                        color: Colors.black,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '9799774711',
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              Card(
-                color: Colors.yellow,
-                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 85.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(5.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        Icons.mail,
-                        size: 20.0,
-                        color: Colors.black,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        'vedantpople4@gmail.com',
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
               FlatButton(
                 child: Text('Machine Learning'),
                 hoverColor: Colors.redAccent,
-                color: Colors.lightBlueAccent,
+                color: Colors.transparent,
                 onPressed: (){
                   Route route = MaterialPageRoute(builder: (context) =>DataScience());
                   Navigator.push(context, route);
@@ -140,7 +86,7 @@ class HomePage extends StatelessWidget{
                       ),
                       FlatButton(
                         child: Text('Github'),
-                        color: Colors.yellowAccent,
+                        color: Colors.transparent,
                         onPressed: (){},
                       )
                     ]
