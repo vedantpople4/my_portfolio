@@ -127,7 +127,7 @@ class HomePage extends StatelessWidget{
                         onPressed: (){},
                       ),
                       FlatButton(
-                        child: Text('Githu'),
+                        child: Text('Github'),
                         color: Colors.yellowAccent,
                         onPressed: (){},
                       )
@@ -138,13 +138,14 @@ class HomePage extends StatelessWidget{
           ),
         ),
       bottomNavigationBar: BottomNavigationBar(
-        fixedColor: Colors.black54,
-        backgroundColor: Colors.yellowAccent,
+        fixedColor: Colors.yellow,
+        backgroundColor: Colors.black,
         items: const <BottomNavigationBarItem>[
 
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             title: Text('Home'),
+            backgroundColor: Colors.black,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_circle),
