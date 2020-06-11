@@ -46,7 +46,16 @@ class HomePage extends StatelessWidget{
                 ),
               ),
               Text(
-                'DATA SCIENTIST || FLUTTER DEV',
+                'Machine Learning',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.yellow[500],
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'SansSourcePro',
+                ),
+              ),
+              Text(
+                'Flutter Dev',
                 style: TextStyle(
                   fontSize: 20.0,
                   color: Colors.yellow[500],
