@@ -127,7 +127,7 @@ class HomePage extends StatelessWidget{
                         onPressed: (){},
                       ),
                       FlatButton(
-                        child: Text('Github'),
+                        child: Text('Githu'),
                         color: Colors.yellowAccent,
                         onPressed: (){},
                       )
