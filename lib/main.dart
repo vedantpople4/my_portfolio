@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget{
                 'Machine Learning',
                 style: TextStyle(
                   fontSize: 20.0,
-                  color: Colors.yellow[500],
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'SansSourcePro',
                 ),
@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget{
                 'Flutter Dev',
                 style: TextStyle(
                   fontSize: 20.0,
-                  color: Colors.yellow[500],
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'SansSourcePro',
                 ),
@@ -119,7 +119,8 @@ class HomePage extends StatelessWidget{
               ),
               FlatButton(
                 child: Text('Machine Learning'),
-                color: Colors.yellowAccent,
+                hoverColor: Colors.redAccent,
+                color: Colors.lightBlueAccent,
                 onPressed: (){
                   Route route = MaterialPageRoute(builder: (context) =>DataScience());
                   Navigator.push(context, route);
@@ -132,8 +133,9 @@ class HomePage extends StatelessWidget{
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       FlatButton(
+
                         child: Text('LinkedIn'),
-                        color: Colors.yellowAccent,
+                        color: Colors.transparent,
                         onPressed: (){},
                       ),
                       FlatButton(
@@ -148,27 +150,25 @@ class HomePage extends StatelessWidget{
           ),
         ),
       bottomNavigationBar: BottomNavigationBar(
-
         items: const <BottomNavigationBarItem>[
-
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.yellowAccent),
-            title: Text('Home'),
+            icon: Icon(Icons.home, color: Colors.black),
+            title: Text(''),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle, color: Colors.yellowAccent,),
+            icon: Icon(Icons.code, color: Colors.black),
             title : Text('Add'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.code, color: Colors.yellowAccent),
+            icon: Icon(Icons.add_circle_outline, color: Colors.black),
             title: Text('Code'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.computer, color: Colors.yellowAccent),
+            icon: Icon(Icons.computer, color: Colors.black),
             title: Text('Computer'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.call_split,color: Colors.yellowAccent),
+            icon: Icon(Icons.call_split,color: Colors.black),
             title: Text('Github'),
           )
 
