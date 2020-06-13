@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mycard/courses.dart';
 import 'package:mycard/datascience.dart';
 
 void main() {
@@ -77,7 +78,8 @@ class HomePage extends StatelessWidget{
                 child:Text('Certification Courses'),
                 color: Colors.transparent,
                 onPressed: () {
-
+                  Route route = MaterialPageRoute(builder: (context)=>Courses());
+                  Navigator.push(context, route);
                 },
               ),
               Card (
