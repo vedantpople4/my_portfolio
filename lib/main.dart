@@ -73,6 +73,12 @@ class HomePage extends StatelessWidget{
                   Navigator.push(context, route);
                   },
               ),
+              FlatButton(
+                child:Text('Certification Courses'),
+                color: Colors.transparent,
+
+                onPressed: () {},
+              ),
               Card (
                 elevation: 0,
                 color: Colors.white,
