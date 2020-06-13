@@ -76,7 +76,6 @@ class HomePage extends StatelessWidget{
               FlatButton(
                 child:Text('Certification Courses'),
                 color: Colors.transparent,
-
                 onPressed: () {},
               ),
               Card (
