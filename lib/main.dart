@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget{
               ),
 
               FlatButton(
-                child: Text('Machine Learning'),
+                child: Text('Projects'),
                 hoverColor: Colors.redAccent,
                 color: Colors.transparent,
                 onPressed: (){
