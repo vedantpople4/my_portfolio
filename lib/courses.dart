@@ -6,9 +6,13 @@ class Courses extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+        title : 'Courses',
+        home: Scaffold(
+            body: Center(
+              child: Text('This is Courses page'),
+            ),
+        ),
     );
   }
 }
 
-}
