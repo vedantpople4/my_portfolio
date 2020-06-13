@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
         home: new HomePage(),
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
-          '/Data Science': (BuildContext context) => DataScience()
+          '/Data Science': (BuildContext context) => DataScience(),
+          '/Courses' : (BuildContext context) => Courses(),
         });
   }
 }
@@ -127,13 +128,9 @@ class HomePage extends StatelessWidget{
             icon: Icon(Icons.call_split,color: Colors.black),
             title: Text('Github'),
           )
-
-
         ],
-
-      ) ,
-
-      );
+      ),
+    );
   }
 }
 
