@@ -10,4 +10,5 @@ class Courses extends StatelessWidget{
     );
   }
 }
+
 }
