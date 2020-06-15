@@ -109,7 +109,7 @@ class HomePage extends StatelessWidget{
                       FlatButton(
                         child: Text('Github'),
                         color: Colors.transparent,
-                        onPressed: (){},
+                        onPressed  : ()=> _launchgit(),
                       )
                     ]
                 )
