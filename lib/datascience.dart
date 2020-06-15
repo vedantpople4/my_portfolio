@@ -8,6 +8,10 @@ class DataScience extends MyApp {
     return MaterialApp(
       title: 'Data Science',
       home: Scaffold(
+        appBar:AppBar (
+
+          title: Text('Projects page'),
+        ),
         body: Center(
           child: Text('This is the Courses page.'),
         ),
