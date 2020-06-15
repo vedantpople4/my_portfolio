@@ -9,7 +9,7 @@ class DataScience extends MyApp {
       title: 'Data Science',
       home: Scaffold(
         appBar:AppBar (
-          title: Text('Projects page'),
+          title: Text('Projects Page'),
           backgroundColor: Colors.black,
         ),
         body: Center(

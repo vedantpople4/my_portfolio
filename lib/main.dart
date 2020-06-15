@@ -3,9 +3,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mycard/courses.dart';
 import 'package:mycard/datascience.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
+}
+
+_launchgit() async {
+  const url = 'https://github.com/vedantpople4';
+  if(await canLaunch(url)){
+    await launch(url);
+  }
+  else{
+    throw 'Could not launch $url';
+  }
 }
 
 class MyApp extends StatelessWidget {
