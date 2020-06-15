@@ -8,6 +8,9 @@ class Courses extends StatelessWidget{
     return MaterialApp(
         title : 'Courses',
         home: Scaffold(
+          appBar: AppBar(
+            title: Text('Courses Done'),
+          ),
             body: Center(
               child: Text('This is Courses page'),
             ),
