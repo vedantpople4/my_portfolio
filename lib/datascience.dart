@@ -9,7 +9,7 @@ class DataScience extends MyApp {
       title: 'Data Science',
       home: Scaffold(
         body: Center(
-          child: Text('this is the first navigated page'),
+          child: Text('This is the Courses page.'),
         ),
       ),
 
