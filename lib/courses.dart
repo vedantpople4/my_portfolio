@@ -10,13 +10,24 @@ class Courses extends StatelessWidget{
         home: Scaffold(
           appBar: AppBar(
             title: Text('Courses Done'),
-            
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.black,
           ),
             body: Center(
-              child: Text('This is Courses page'),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children:<Widget>
+                  [
+                    Text(
+                  'This is the Courses page'),
+                    Image(
+                        image: AssetImage(''))
+
+
+              ],
             ),
         ),
+    )
     );
   }
 }
