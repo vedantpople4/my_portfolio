@@ -14,7 +14,7 @@ class Courses extends StatelessWidget{
           ),
             body: Center(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children:<Widget>
                   [
