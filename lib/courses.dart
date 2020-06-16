@@ -14,14 +14,17 @@ class Courses extends StatelessWidget{
           ),
             body: Center(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children:<Widget>
                   [
                     Text(
                   'This is the Courses page'),
                     Image(
-                        image: AssetImage('images/cert1.JPG'))
+                          image: AssetImage('images/cert1.JPG'),
+                          width : 280.00,
+                          height: 265.00,
+                    )
 
 
               ],
