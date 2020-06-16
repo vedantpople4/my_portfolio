@@ -10,7 +10,8 @@ class Courses extends StatelessWidget{
         home: Scaffold(
           appBar: AppBar(
             title: Text('Courses Done'),
-            backgroundColor: Colors.black,
+            
+            backgroundColor: Colors.white,
           ),
             body: Center(
               child: Text('This is Courses page'),

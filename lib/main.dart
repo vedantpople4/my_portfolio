@@ -9,10 +9,10 @@ void main() {
   runApp(MyApp());
 }
 
-_launchgit() async {
+_launchgit() async  {
   const url = 'https://github.com/vedantpople4';
-  if(await canLaunch(url)){
-    await launch(url);
+  if(canLaunch(url) != null){
+    launch(url);
   }
   else{
     throw 'Could not launch $url';
