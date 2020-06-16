@@ -114,7 +114,7 @@ class HomePage extends StatelessWidget{
 
                         child: Text('LinkedIn'),
                         color: Colors.transparent,
-                        onPressed: (){},
+                        onPressed: ()=> _launchlinkedin(),
                       ),
                       FlatButton(
                         child: Text('Github'),
