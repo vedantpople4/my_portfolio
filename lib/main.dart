@@ -19,6 +19,16 @@ _launchgit() async  {
   }
 }
 
+_launchlinkedin() async{
+  const url = 'https://www.linkedin.com/in/vedant-pople-b97783168/';
+  if(canLaunch(url)!=null){
+    launch(url);
+  }
+  else{
+    throw 'Could not launch $url';
+  }
+}
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
