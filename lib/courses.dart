@@ -21,7 +21,7 @@ class Courses extends StatelessWidget{
                     Text(
                   'This is the Courses page'),
                     Image(
-                        image: AssetImage(''))
+                        image: AssetImage('images/cert1.JPG'))
 
 
               ],

@@ -32,6 +32,7 @@ flutter:
 
   assets:
     - images/vedant.JPG
+    - images/cert1.JPG
   fonts:
     - family: Pacifico
       fonts:
