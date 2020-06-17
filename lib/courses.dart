@@ -18,8 +18,7 @@ class Courses extends StatelessWidget{
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children:<Widget>
                   [
-                    Text(
-                  'This is the Courses page'),
+                    Text('This is the Courses page'),
                     Image(
                           image: AssetImage('images/cert1.JPG'),
                           width : 280.00,
