@@ -24,7 +24,10 @@ class Courses extends StatelessWidget{
                           width : 280.00,
                           height: 265.00,
                     ),
-                    Text('This is the second certificate.')
+                    Text('This is the second certificate.'),
+                    Image(
+                      image: AssetImage('images/cer2.JPG'),
+                    )
 
 
               ],
