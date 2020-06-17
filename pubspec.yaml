@@ -31,8 +31,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/vedant.JPG
-    - images/cert1.JPG
+    - images/
   fonts:
     - family: Pacifico
       fonts:

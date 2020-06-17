@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget{
               ),
               Text(
                   'Vedant Pople',
-                style: TextStyle(
+                  style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
