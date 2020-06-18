@@ -38,6 +38,9 @@ class Courses extends StatelessWidget{
                       height: 265.00,
                     ),
                     Text('This is the Fourth certificate.'),
+                    Image(
+                      image: AssetImage('images/cert4.JPG'),
+                    ),
                   ],
             ),
         ),
