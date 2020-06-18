@@ -13,9 +13,8 @@ class Courses extends StatelessWidget{
             backgroundColor: Colors.black,
           ),
             body: SingleChildScrollView(
-              //scrollDirection: Axis.vertical,
-                scrollDirection : Axis.horizontal,
-                child: Column(
+              scrollDirection: Axis.vertical,
+              child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children:<Widget>
@@ -37,7 +36,8 @@ class Courses extends StatelessWidget{
                       image: AssetImage('images/cert3.JPG'),
                       width: 280.00,
                       height: 265.00,
-                    )
+                    ),
+                    Text('This is the Fourth certificate.'),
                   ],
             ),
         ),
