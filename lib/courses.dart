@@ -13,44 +13,34 @@ class Courses extends StatelessWidget{
             backgroundColor: Colors.black,
           ),
             body: SingleChildScrollView(
-              scrollDirection: Axis.vertical,
+              //scrollDirection: Axis.vertical,
+                scrollDirection : Axis.horizontal,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children:[
-                Card(
-                  child: Column(
-                  children: <Widget>
-                      [
-
-                        Text('This is the Courses page.'),
-                        Image(
-                              image: AssetImage('images/cert1.JPG'),
-                              width : 280.00,
-                              height: 265.00,
-                        ),
-                        Text('This is the second certificate.'),
-                        Image(
-                          image: AssetImage('images/cert2.JPG'),
+                  children:<Widget>
+                  [
+                    Text('This is the Courses page.'),
+                    Image(
+                          image: AssetImage('images/cert1.JPG'),
                           width : 280.00,
-                          height : 265.00,
-                        ),
-                        Text('This is the third certificate.'),
-                        Image(
-                          image: AssetImage('images/cert3.JPG'),
-                          width: 280.00,
                           height: 265.00,
-                        )
-
-
-
+                    ),
+                    Text('This is the second certificate.'),
+                    Image(
+                      image: AssetImage('images/cert2.JPG'),
+                      width : 280.00,
+                      height : 265.00,
+                    ),
+                    Text('This is the third certificate.'),
+                    Image(
+                      image: AssetImage('images/cert3.JPG'),
+                      width: 280.00,
+                      height: 265.00,
+                    )
                   ],
-                ),
-
             ),
-        ]
-    ),
-    )
+        ),
     )
     );
   }
