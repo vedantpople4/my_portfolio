@@ -14,10 +14,19 @@ class DataScience extends MyApp {
         ),
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text('This is the Projects page.'),
+              Card(
+                elevation: 0,
+                child: Text(
+                  'The Login and Registration Project which uses the image of a user for registration rather than the credentials for convinent usage and maintainence of Administrators.'
+                ),
+              ),
               FlatButton(
                 child: Text('Login Registration'),
+                onPressed: (){},
               ),
             ],
           ),
