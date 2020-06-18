@@ -13,7 +13,15 @@ class DataScience extends MyApp {
           backgroundColor: Colors.black,
         ),
         body: Center(
-          child: Text('This is the Projects page.'),
+          child: Column(
+            children: <Widget>[
+              Text('This is the Projects page.'),
+              FlatButton(
+                child: Text('Login Registration'),
+              ),
+            ],
+          ),
+          
         ),
       ),
 
