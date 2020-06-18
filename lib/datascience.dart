@@ -13,7 +13,7 @@ class DataScience extends MyApp {
           backgroundColor: Colors.black,
         ),
         body: Center(
-          child: Text('This is the Courses page.'),
+          child: Text('This is the Projects page.'),
         ),
       ),
 
