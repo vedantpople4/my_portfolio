@@ -8,11 +8,13 @@ class Courses extends StatelessWidget{
     return MaterialApp(
         title : 'Courses',
         home: Scaffold(
+          backgroundColor: Colors.white,
           appBar: AppBar(
             title: Text('Courses Done'),
             backgroundColor: Colors.black,
           ),
             body: SingleChildScrollView(
+
               scrollDirection: Axis.vertical,
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +42,13 @@ class Courses extends StatelessWidget{
                     Text('This is the Fourth certificate.'),
                     Image(
                       image: AssetImage('images/cert4.JPG'),
+                      width: 320.00,
+                      height: 265.00,
                     ),
+                    Image(
+                      image: AssetImage('images/white.JPG'),
+
+                    )
                   ],
             ),
         ),
