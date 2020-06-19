@@ -45,7 +45,8 @@ class DataScience extends MyApp {
               Card(
                 child: Column(
                   children: <Widget>[
-
+                    Text('This project is a calculator App.'),
+                    Text('This app can do addition, subtraction, multiplication and division of two numbers. '),
                   ],
                 ),
               )
