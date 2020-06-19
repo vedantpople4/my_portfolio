@@ -13,6 +13,15 @@ launchlogin() async  {
   }
 }
 
+lauchcalc() async {
+  const url = 'https://github.com/vedantpople4/flutter_calculator';
+  if(canLaunch(url)!=null){
+    launch(url);
+  }
+  else{
+    throw 'Could no launch $url';
+  }
+}
 
 
 class DataScience extends MyApp {
@@ -21,6 +30,7 @@ class DataScience extends MyApp {
     return MaterialApp(
       title: 'Data Science',
       home: Scaffold(
+        backgroundColor: Colors.white,
         appBar:AppBar (
           title: Text('Projects Page'),
           backgroundColor: Colors.black,
@@ -45,16 +55,18 @@ class DataScience extends MyApp {
                 onPressed: ()=>launchlogin(),
               ),
               Card(
+                elevation : 0,
                 child: Column(
                   children: <Widget>[
                     Text('This project is a calculator App.'),
-                    Text('This app can do addition, subtraction, multiplication and division of two numbers. '),
+                    Text('This app can do addition, subtraction, multiplication '),
+                    Text('and division of two numbers. '),
                   ],
                 ),
               ),
               FlatButton(
                 child: Text('Calculator App'),
-                onPressed: (){},
+                onPressed: ()=> lauchcalc(),
               )
             ],
           ),
