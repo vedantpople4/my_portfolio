@@ -1,6 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mycard/main.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+launchlogin() async  {
+  const url = 'https://github.com/vedantpople4/Login-and-registration';
+  if(canLaunch(url) != null){
+    launch(url);
+  }
+  else{
+    throw 'Could not launch $url';
+  }
+}
 
 class DataScience extends MyApp {
   @override
@@ -20,17 +31,26 @@ class DataScience extends MyApp {
               Text('This is the Projects page.'),
               Card(
                 elevation: 0,
-                child: Text(
-                  'The Login and Registration Project which uses the image of a user for registration rather than the credentials for convinent usage and maintainence of Administrators.'
+                child: Column(
+                  children: <Widget>[
+                    Text('This project uses image of a user for registration.'),
+                    Text('This helps the admin manage for maintainable purposes.'),
+                  ],
                 ),
               ),
               FlatButton(
                 child: Text('Login Registration'),
-                onPressed: (){},
+                onPressed: ()=>launchlogin(),
               ),
+              Card(
+                child: Column(
+                  children: <Widget>[
+
+                  ],
+                ),
+              )
             ],
           ),
-          
         ),
       ),
 
