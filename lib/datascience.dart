@@ -49,6 +49,10 @@ class DataScience extends MyApp {
                     Text('This app can do addition, subtraction, multiplication and division of two numbers. '),
                   ],
                 ),
+              ),
+              FlatButton(
+                child: Text('Calculator App'),
+                onPressed: (){},
               )
             ],
           ),
