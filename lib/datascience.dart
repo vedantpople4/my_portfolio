@@ -82,6 +82,7 @@ class DataScience extends MyApp {
                 child: Column(
                   children: <Widget>[
                     Text('Basic Machine Learning Projects'),
+                    Text('It contains my first hands on experience on ML'),
                   ],
                 ),
               ),
