@@ -23,6 +23,15 @@ lauchcalc() async {
   }
 }
 
+launchbasic() async{
+  const url ='https://github.com/vedantpople4/Basic_ML_projects';
+  if(canLaunch(url)!=null){
+    launch(url);
+  }else{
+    throw 'Could not launch $url';
+  }
+}
+
 
 class DataScience extends MyApp {
   @override
@@ -69,15 +78,16 @@ class DataScience extends MyApp {
                 onPressed: ()=> lauchcalc(),
               ),
               Card(
+                elevation: 0,
                 child: Column(
                   children: <Widget>[
-                    Text('This repo contains Machine Learning Projects'),
+                    Text('Basic Machine Learning Projects'),
                   ],
                 ),
               ),
               FlatButton(
                 child: Text('Basic ML Projects'),
-                onPressed: (){},
+                onPressed: ()=>launchbasic(),
               )
             ],
           ),
