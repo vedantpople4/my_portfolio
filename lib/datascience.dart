@@ -70,9 +70,12 @@ class DataScience extends MyApp {
               ),
               Card(
                 child: Column(
-                  children: <Widget>[],
+                  children: <Widget>[
+                    Text('This repo contains Machine Learning Projects'),
+                  ],
                 ),
               ),
+              FlatButton()
             ],
           ),
         ),
