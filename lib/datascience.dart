@@ -33,7 +33,12 @@ launchbasic() async{
 }
 
 launchml() async{
-
+  const url = 'https://github.com/vedantpople4/ML_Projects';
+  if(canLaunch(url)!=null){
+    launch(url);}
+    else{
+      throw 'Could not launch $url';
+  }
 }
 
 
