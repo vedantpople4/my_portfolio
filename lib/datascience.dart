@@ -98,7 +98,10 @@ class DataScience extends MyApp {
                   ],
                 ),
               ),
-              FlatButton(),
+              FlatButton(
+                child: Text('ML Projects'),
+                onPressed: (){},
+              ),
             ],
           ),
         ),
