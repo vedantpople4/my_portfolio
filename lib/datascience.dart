@@ -100,6 +100,7 @@ class DataScience extends MyApp {
                 onPressed: ()=>launchbasic(),
               ),
               Card(
+                elevation: 0,
                 child: Column(
                   children: <Widget>[
                     Text('Machine Learning Projects'),
