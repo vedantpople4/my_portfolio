@@ -89,13 +89,12 @@ class DataScience extends MyApp {
               FlatButton(
                 child: Text('Basic ML Projects'),
                 onPressed: ()=>launchbasic(),
-              )
+              ),
+              Card(),
             ],
           ),
         ),
       ),
-
     );
-
   }
 }
