@@ -90,7 +90,15 @@ class DataScience extends MyApp {
                 child: Text('Basic ML Projects'),
                 onPressed: ()=>launchbasic(),
               ),
-              Card(),
+              Card(
+                child: Column(
+                  children: <Widget>[
+                    Text('Machine Learning Projects'),
+                    Text('The A-Z Data Science Course model implementations'),
+                  ],
+                ),
+              ),
+              FlatButton(),
             ],
           ),
         ),
