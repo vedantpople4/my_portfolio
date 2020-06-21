@@ -110,7 +110,7 @@ class DataScience extends MyApp {
               ),
               FlatButton(
                 child: Text('ML Projects'),
-                onPressed: (){},
+                onPressed: ()=>launchml(),
               ),
             ],
           ),
