@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "58100901183",
+    "firebase_url": "https://newproject-a5891.firebaseio.com",
+    "project_id": "newproject-a5891",
+    "storage_bucket": "newproject-a5891.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58100901183:android:22d06e32c6633c98951f8a",
+        "android_client_info": {
+          "package_name": "com.vedant.my_card"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58100901183-23jdnhuugjd624o6g0j6cd0ed42sq1dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-1zxTHv_3h4brkg0CZu7akf0hQUuXrVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58100901183-23jdnhuugjd624o6g0j6cd0ed42sq1dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
