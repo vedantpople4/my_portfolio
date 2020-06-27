@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget{
               CircleAvatar(
                 backgroundImage: AssetImage('images/vedant.JPG'),
                 radius: 50.0,
-                backgroundColor: Colors.redAccent,
+                backgroundColor: Colors.amber,
               ),
               Text(
                   'Vedant Pople',
