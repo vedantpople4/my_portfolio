@@ -112,7 +112,7 @@ class HomePage extends StatelessWidget{
                     children: <Widget>[
                       FlatButton(
 
-                        child: Text('Linkedin'),
+                        child: Text('LinkedIn'),
                         color: Colors.transparent,
                         onPressed: ()=> _launchlinkedin(),
                       ),
