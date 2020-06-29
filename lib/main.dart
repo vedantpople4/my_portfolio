@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'My Portfolio App',
+        title: 'MyApp',
         home: new HomePage(),
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
