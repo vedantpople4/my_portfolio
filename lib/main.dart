@@ -129,13 +129,20 @@ class HomePage extends StatelessWidget{
           ),
         ),
       bottomNavigationBar: CurvedNavigationBar(
-        height: 50,
+        height: 48 ,
+        color: Colors.black,
         backgroundColor: Colors.transparent,
         items: <Widget>[
-          Icon(Icons.code,size: 20, color: Colors.black),
-          Icon(Icons.add_circle, size: 20, color: Colors.black),
-          Icon(Icons.computer, size: 20, color: Colors.black)
+          Icon(Icons.code,size: 20, color: Colors.white),
+          Icon(Icons.computer, size: 20, color: Colors.white),
+          Icon(Icons.add_circle, size: 20, color: Colors.white),
+          Icon(Icons.call_merge, size: 20, color: Colors.white),
+          Icon(Icons.hourglass_empty, size: 20, color: Colors.white),
         ],
+        animationDuration: Duration(
+          milliseconds: 200
+        ),
+        animationCurve: Curves.bounceInOut,
         onTap: (index){
           debugPrint('Current index is $index');
         },
