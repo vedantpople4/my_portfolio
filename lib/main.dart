@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mycard/courses.dart';
 import 'package:mycard/datascience.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -127,7 +128,8 @@ class HomePage extends StatelessWidget{
             ],
           ),
         ),
-      bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor : Colors.amber,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home, color: Colors.black),
