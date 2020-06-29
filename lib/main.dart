@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget{
                 backgroundColor: Colors.redAccent,
               ),
               Text(
-                  'Vedant M Pople',
+                  'Vedant Pople',
                   style: TextStyle(
                   fontSize: 35.0,
                   color: Colors.black,
@@ -129,6 +129,8 @@ class HomePage extends StatelessWidget{
           ),
         ),
       bottomNavigationBar: CurvedNavigationBar(
+        height: 50,
+        backgroundColor: Colors.transparent,
         items: <Widget>[
           Icon(Icons.code,size: 20, color: Colors.black),
           Icon(Icons.add_circle, size: 20, color: Colors.black),
