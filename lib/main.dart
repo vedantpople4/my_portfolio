@@ -129,29 +129,14 @@ class HomePage extends StatelessWidget{
           ),
         ),
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor : Colors.amber,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.black),
-            title: Text(''),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.code, color: Colors.black),
-            title : Text('Add'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle_outline, color: Colors.black),
-            title: Text('Code'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.computer, color: Colors.black),
-            title: Text('Computer'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.call_split,color: Colors.black),
-            title: Text('Github'),
-          )
+        items: <Widget>[
+          Icon(Icons.code,size: 20, color: Colors.black),
+          Icon(Icons.add_circle, size: 20, color: Colors.black),
+          Icon(Icons.computer, size: 20, color: Colors.black)
         ],
+        onTap: (index){
+          debugPrint('Current index is $index');
+        },
       ),
     );
   }
