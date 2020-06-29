@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget{
               Text(
                 'Machine Learning',
                 style: TextStyle(
-                  fontSize: 15.0,
+                  fontSize: 20.0,
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'SansSourcePro',
@@ -80,7 +80,7 @@ class HomePage extends StatelessWidget{
               Text(
                 'Flutter Dev',
                 style: TextStyle(
-                  fontSize: 15.0,
+                  fontSize: 20.0,
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'SansSourcePro',
