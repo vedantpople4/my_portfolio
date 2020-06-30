@@ -124,8 +124,8 @@ class DataScience extends MyApp {
                 elevation: 0,
                 child: Column(
                   children: <Widget>[
-                    Text('Dart APIs'),
-                    Text('Various APIs made using Dart Frameworks'),
+                    Text('Angel Framework'),
+                    Text('A dart framework for flutter backend.'),
                   ],
                 ),
               ),
