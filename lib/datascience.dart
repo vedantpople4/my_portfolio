@@ -3,6 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:mycard/main.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+launchdart() async {
+  const url = 'https://github.com/vedantpople4/Angel_framework';
+  if (canLaunch(url) != null) {
+    launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 launchlogin() async {
   const url = 'https://github.com/vedantpople4/Login-and-registration';
   if (canLaunch(url) != null) {
