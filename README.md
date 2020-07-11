@@ -1,5 +1,5 @@
-# The my_card App
-The my_card app made as a portfolio app.
+# The Portfolio App
+The my_portfolio app made as a portfolio app.
 
 A new Flutter application.
 
