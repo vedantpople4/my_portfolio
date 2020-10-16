@@ -1,6 +1,5 @@
 # The Portfolio App
-The my_portfolio app made as a portfolio app. The web version will also be up soon.
-
+The my_portfolio app made as a portfolio app. 
 A new Flutter application.
 
 ## Getting Started
